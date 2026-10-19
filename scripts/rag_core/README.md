@@ -35,7 +35,7 @@ SI 문서(엑셀 산출물) RAG의 **검색, 근거 모으기, 채점**을 하�
 | `pipeline/` | Chroma 서랍과 로컬 임베딩, 검색 |
 | `config.py` | `.env` 읽기, 외부 API 호출 차단 |
 | `코드_안내.md` | 처음 보는 사람용 안내(흐름, 읽는 순서, 파일 지도, 용어) |
-| `INTERFACE.md`, `ORIGIN.md` | si-prep과의 경계, 코드 출처(MIT, 라이선스는 저장소 맨 위 `LICENSE`) |
+| `INTERFACE.md` | si-prep과의 경계 |
 
 ## 흐름
 ```
