@@ -47,10 +47,6 @@ cd <rag-core> && pip install -r requirements.txt
 - 검색 · 평가 코드(rag-core) 설계 · 구현: Joonki Yoon
 - 전처리 도구(si-prep) 설계 · 구현: KimSeungJu — [si-prep](https://github.com/sSFireFoxSs/si-prep)
 
-## 코드 출처
-
-검색 부분(`pipeline/`, `config.py` 일부)은 MIT 라이선스 오픈소스 [ask-my-appliance](https://github.com/Broogun/ask-my-appliance)에서 가져와 고쳐 썼습니다. 자세한 내용은 [`scripts/rag_core/ORIGIN.md`](scripts/rag_core/ORIGIN.md)
-
 ## 라이선스
 
 [MIT](LICENSE)
