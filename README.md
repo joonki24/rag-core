@@ -4,19 +4,13 @@
   <i>전처리가 정말 검색을 낫게 했는지, 같은 조건에서 숫자로 확인하는 RAG 평가 코드</i>
 </p>
 
-<div align="center">
-<table>
-  <tr>
-    <td align="left">
-      <img src="https://img.shields.io/badge/python-3.14%20tested-2563EB?style=flat-square" alt="python"><br>
-      <img src="https://img.shields.io/badge/license-MIT-2563EB?style=flat-square" alt="license"><br>
-      <img src="https://img.shields.io/badge/embedding-local%20bge--m3-2563EB?style=flat-square" alt="embedding"><br>
-      <img src="https://img.shields.io/badge/LLM%20grading-none-2563EB?style=flat-square" alt="LLM grading"><br>
-      <img src="https://img.shields.io/badge/status-beta-2563EB?style=flat-square" alt="status">
-    </td>
-  </tr>
-</table>
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.14%20tested-blue" alt="python">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="license">
+  <img src="https://img.shields.io/badge/embedding-local%20(bge--m3)-orange" alt="embedding">
+  <img src="https://img.shields.io/badge/LLM%20grading-none-lightgrey" alt="no LLM grading">
+  <img src="https://img.shields.io/badge/status-beta-yellow" alt="status">
+</p>
 
 <p align="center">
   <a href="#빠르게-시작하기">빠르게 시작하기</a> ·
