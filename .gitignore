@@ -1,0 +1,12 @@
+# 비밀 값과 환경
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Chroma 저장소(문서에서 만든 텍스트가 들어갈 수 있음)
+chroma_db/
+# 압축 파일과 OS 파일
+*.zip
+.DS_Store
+Thumbs.db

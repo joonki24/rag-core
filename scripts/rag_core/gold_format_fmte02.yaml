@@ -1,0 +1,61 @@
+# 서비스 E(서비스 E) 평가셋 v0.2(서비스 E_평가셋_30문항_v0.2_답변보강.xlsx)를 읽는 설정(묶음 96 F4, CHANGES.md).
+# 사용: python gold_xlsx_convert.py convert <평가셋.xlsx> <출력 폴더> --format gold_format_fmte02.yaml
+# 평가셋 엑셀은 고치지 않는다. 대체 묶음 값을 그대로 묶음 이름으로 쓴다(같은 묶음 AND, 다른 묶음 OR). 30문항 모두 읽는다.
+
+profile: e-v0.2
+rule: unit_bundle
+bundle_mode: named
+
+sheets:
+  questions: 질문 정답표
+  question_list: 질문 목록
+  evidence: 질문별 근거
+  documents: 기준 문서
+header_row: 4
+first_row: 5
+
+question_columns:
+  id: 질문 ID
+  type: 유형
+  text: 질문
+  state: 상태
+question_list_columns:
+  id: 질문 ID
+  text: 질문
+
+evidence_columns:
+  question_id: 질문 ID
+  unit: 채점 단위 ID
+  bundle: 대체 묶음
+  role: 필수/보조
+  file: 파일명
+  sheet_cells: 시트·셀
+
+document_columns:
+  id: 문서 ID
+  file: 파일명
+  sha256: SHA-256
+  state: 출처 상태
+
+role_values:
+  필수: true
+  보조: false
+
+type_map:
+  신규 기능 N1: 신규 기능 N1
+  신규 기능 N2: 신규 기능 N2
+  기존 기능 결합: 기존 기능 결합
+  기존 기능 변경·확장: 기존 기능 변경·확장
+  기존 사실·자료 범위: 기존 사실·자료 범위
+
+expected_counts:          # 2026-10-16 정답지를 열어 센 값(채점 전, 묶음 96 F4)
+  questions: 30
+  evidence: 308
+  required_rows: 101
+  required_units: 96
+
+documents:
+  REQ: {file: 01_요구사항정의_분석서_v0.3.xlsx, sha256: d31b3ffba7ec6e39dd89b05c5f9da2bf9a9f909495f4bfee8ca1bb8cbd4c1fe3}
+  POL: {file: 02_서비스_정책_정의서_v0.1.xlsx, sha256: 1c03bac52f677a2a06b63290969027d1d2b720ee04775b74edcd8e39b62f4db8}
+  FNC: {file: 03_사용자_관리자_기능정의서_v0.3.xlsx, sha256: 1654c5fd1f735670f4c3d8536bedc2221f7802ebf90b5a6e132525292c03c4ac}
+  TC: {file: 04_테스트케이스_v0.1.xlsx, sha256: 13b1c82fd0afdd0da4432e7ba801819ce97226e53db8e31b79d112df6e92c59f}

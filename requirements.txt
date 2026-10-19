@@ -1,0 +1,11 @@
+# rag_core 실행에 필요한 것
+chromadb>=1.5
+sentence-transformers>=5
+tiktoken>=0.9
+pyyaml>=6
+openpyxl>=3.1
+python-dotenv>=1.0
+pydantic>=2.12   # 스키마 1.2(si_prep.schema)가 Field(exclude_if=...)를 쓴다
+# 청크 검증에 팀 패키지가 필요하다: pip install -e <si-prep 폴더>
+# 기준선 B0-RC(b0_recursive.py)의 리커시브 분할
+langchain-text-splitters>=0.3
