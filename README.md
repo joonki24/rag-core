@@ -5,15 +5,17 @@
 </p>
 
 <div align="center">
-
-| | |
-|:--|:--|
-| **Python** | 3.14 (tested) |
-| **License** | MIT |
-| **Embedding** | local · bge-m3 |
-| **LLM grading** | none |
-| **Status** | beta |
-
+<table>
+  <tr>
+    <td align="left">
+      <img src="https://img.shields.io/badge/python-3.14%20tested-2563EB?style=flat-square" alt="python"><br>
+      <img src="https://img.shields.io/badge/license-MIT-2563EB?style=flat-square" alt="license"><br>
+      <img src="https://img.shields.io/badge/embedding-local%20bge--m3-2563EB?style=flat-square" alt="embedding"><br>
+      <img src="https://img.shields.io/badge/LLM%20grading-none-2563EB?style=flat-square" alt="LLM grading"><br>
+      <img src="https://img.shields.io/badge/status-beta-2563EB?style=flat-square" alt="status">
+    </td>
+  </tr>
+</table>
 </div>
 
 <p align="center">
