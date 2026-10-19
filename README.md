@@ -4,7 +4,7 @@
   <i>전처리가 정말 검색을 낫게 했는지, 같은 조건에서 숫자로 확인하는 RAG 평가 코드</i>
 </p>
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/python-3.14%20tested-blue" alt="python"><br>
   <img src="https://img.shields.io/badge/license-MIT-green" alt="license"><br>
   <img src="https://img.shields.io/badge/embedding-local%20(bge--m3)-orange" alt="embedding"><br>
