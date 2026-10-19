@@ -24,15 +24,9 @@
 
 전처리 도구 [si-prep](https://github.com/sSFireFoxSs/si-prep)이 만든 청크·항목·링크를 받아, **흔히 쓰는 청킹 방식보다 정답 근거를 더 잘 찾는지** 같은 조건에서 비교합니다. 점수는 사람이 확인한 정답 근거 행을 찾아왔는지로만 매기며, LLM에게 채점을 맡기지 않습니다.
 
-```mermaid
-flowchart LR
-    A[SI 엑셀 산출물] --> B[si-prep<br/>항목 · 링크 · 청크]
-    A --> C[기준선 청크<br/>B0-RC · B0-S · B0-R]
-    B --> D[rag-core<br/>검색 → 근거 담기 → 채점]
-    C --> D
-    G[정답표<br/>사람 확인] --> D
-    D --> E[질문별 점수 · 95% 신뢰구간 · 통과 판정]
-```
+<p align="center">
+  <img src="docs/images/architecture.png" alt="SI 엑셀 산출물이 si-prep과 기준선 청크로 나뉘어 rag-core에서 정답표와 함께 채점되는 흐름" width="100%">
+</p>
 
 ## 특징
 
@@ -49,13 +43,9 @@ flowchart LR
 
 > 공개용 합성 SI 문서 세트 하나(질문 30개)의 결과입니다. 실행 전에 등록하고 한 번만 실행했습니다. 데이터와 정답지는 이 저장소에 없으므로 이 저장소만으로는 재현할 수 없습니다.
 
-```mermaid
-xychart-beta
-    title "정답 근거 회수율 (%)"
-    x-axis ["B0-R", "B0-RC", "B0-S", "si-prep 검색만", "si-prep 검색+링크"]
-    y-axis 0 --> 50
-    bar [18.33, 24.17, 26.39, 34.17, 39.44]
-```
+<p align="center">
+  <img src="docs/images/recall.png" alt="정답 근거 회수율(%): B0-R 18.33, B0-RC 24.17, B0-S 26.39, si-prep 검색만 34.17, si-prep 검색+링크 39.44" width="100%">
+</p>
 
 | 방식 | 하는 일 | 회수율(%) |
 |---|---|---|
