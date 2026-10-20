@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="docs/images/logo-light.png" alt="rag-core" width="360">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-dark.png">
+    <img src="docs/images/logo-light.png" alt="rag-core" width="360">
+  </picture>
 </p>
 
 <p align="center">
