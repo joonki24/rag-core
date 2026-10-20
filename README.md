@@ -1,4 +1,6 @@
-<h1 align="center">rag-core</h1>
+<p align="center">
+  <img src="docs/images/logo-light.png" alt="rag-core" width="360">
+</p>
 
 <p align="center">
   <i>전처리가 정말 검색을 낫게 했는지, 같은 조건에서 숫자로 확인하는 RAG 평가 코드</i>
